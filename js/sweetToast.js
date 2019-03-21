@@ -33,6 +33,19 @@
     -ms-user-select: none;
     user-select: none;
   }
+
+  .sweetToast-center {
+    top: 10px;
+    left: 600px;
+    animation: showUp 1s ease-in;
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
   
   .sweetToast-topLeft {
     top: 10px;
