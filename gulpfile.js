@@ -16,6 +16,7 @@ const gulp = require(`gulp`),
   paths = {
     js: {
       toast: `./js/sweetToast.js`,
+      toastES5: `./js/`,
       dist: `./dist/`
     },
     doc: {
@@ -265,6 +266,7 @@ gulp.task(`concatSweetToast`, () => {
     .pipe(babel({
       presets: [`es2015`]
     }))
+    .pipe(gulp.dest(paths.js.dist))
     .pipe(concat(`sweetToast.min.js`))
     .pipe(jsmin())
     .pipe(gulp.dest(paths.js.dist))
