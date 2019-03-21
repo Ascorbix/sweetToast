@@ -1,0 +1,3 @@
+class SweetToast {
+  constructor(pToastData) {}
+}

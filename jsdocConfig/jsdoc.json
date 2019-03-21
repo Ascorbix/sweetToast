@@ -1,0 +1,46 @@
+{
+  "tags": {
+    "allowUnknownTags": true
+  },
+  "plugins": [
+    "./jsdocConfig/jsdocConfig"
+  ],
+  "templates": {
+    "applicationName": "KitKoin",
+    "disqus": "",
+    "googleAnalytics": "",
+    "footer" : "Made with ♥ by Konceptik",
+    "copyright" : "KitKoinJS Copyright © 2018 Konceptik.",
+    "openGraph": {
+      "title": "KitKoin",
+      "type": "website",
+      "image": "https://res.cloudinary.com/konceptik/image/upload/v1535153682/kitkoin_logos/kitkoin_logo_500.png",
+      "site_name": "",
+      "url": ""
+    },
+    "meta": {
+      "title": "KitKoin API Documentation",
+      "description": "Documentation for KitKoinJS library",
+      "keyword": "JQuery, NodeJS, PIXI.js, Canvas"
+    },
+    "links": {
+      "shortcut icon": "https://res.cloudinary.com/konceptik/image/upload/kitkoin_logos/favicon.ico"
+    },
+    "linenums": true,
+    "source": {
+      "include": [
+        "./src/"
+      ],
+      "includePattern": ".+\\.js(doc)?quot;",
+      "excludePattern": "(^|\\/|\\\\)_"
+    }
+  },
+  "opts": {
+    "encoding": "utf8",
+    "recurse": true,
+    "private": false,
+    "lenient": true,
+    "destination": "./docs/gen",
+    "template": "./node_modules/jaguarjs-jsdoc"
+  }
+}
